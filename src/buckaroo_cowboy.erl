@@ -21,7 +21,8 @@ name() ->
 routes() ->
   [
     {'_', [
-      {"/", buckaroo_handler, #{}}
+      {"/", buckaroo_handler, #{}},
+      {"/ws", buckaroo_websocket_handler, #{}}
     ]
   }].
 
