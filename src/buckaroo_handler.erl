@@ -1,6 +1,6 @@
 %%%===================================================================
-%%% @copyright
-%%% @author
+%%% @copyright 2026 (c) Mathieu Kerjouan
+%%% @author Mathieu Kerjouan
 %%% @doc
 %%% @end
 %%%===================================================================
@@ -12,5 +12,12 @@
 %% @end
 %%--------------------------------------------------------------------
 init(Req, State) ->
-  {ok, Req, State}.
+  Reply = cowboy_req:reply(200,
+    #{
+      <<"content-type">> => <<"text/plain">>
+    },
+    <<"hello">>,
+    Req
+  ),
+  {ok, Reply, State}.
 
