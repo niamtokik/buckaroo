@@ -1,0 +1,16 @@
+{application, buckaroo, [
+  {description, "buckaroo"},
+  {vsn, "0.1.0"},
+  {registered, [
+  ]},
+  {mod, {buckaroo_app, []}},
+  {applications, [
+    kernel,
+    stdlib,
+    cowboy
+  ]},
+  {env, []},
+  {modules, []},
+  {licenses, ["MIT"]},
+  {links, []}
+]}.
