@@ -35,7 +35,7 @@ start_quic() ->
   cowboy:start_quic(
     name(),
     #{
-      socket_opts => protocol_options() ++ [
+      socket_opts => transport_options() ++ [
         {certfile, "cert.pem"},
         {keyfile, "key.pem"}
       ]
