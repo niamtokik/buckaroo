@@ -16,3 +16,6 @@ logs
 *.iml
 rebar3.crashdump
 *~
+*.pem
+*.cert
+*.key
